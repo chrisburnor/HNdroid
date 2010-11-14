@@ -90,7 +90,7 @@ public class Submissions extends Activity {
     };
     
     OnItemClickListener clickListener = new OnItemClickListener() {
-		@Override
+		//@Override
 		public void onItemClick(AdapterView<?> newsAV, View view, int pos, long id) {
 			final News item = (News) newsAV.getAdapter().getItem(pos);
 			if (pos < 30) {

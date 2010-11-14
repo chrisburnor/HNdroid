@@ -44,7 +44,7 @@ public class CommentDialog extends Dialog {
     }
 	
 	private class loginListener implements android.view.View.OnClickListener {
-		 @Override
+		 //@Override
 	     public void onClick(View v) {
 			 if (replyUrl == null)
 				 readyListener.ready(String.valueOf(text.getText()));

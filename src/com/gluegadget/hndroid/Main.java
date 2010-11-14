@@ -131,7 +131,7 @@ public class Main extends Activity {
     };
     
     OnItemClickListener clickListener = new OnItemClickListener() {
-		@Override
+		//@Override
 		public void onItemClick(AdapterView<?> newsAV, View view, int pos, long id) {
 			final News item = (News) newsAV.getAdapter().getItem(pos);
 			if (pos < 30) {
@@ -164,7 +164,7 @@ public class Main extends Activity {
 	};
     
     private class OnLoginListener implements LoginDialog.ReadyListener {
-    	@Override
+    	//@Override
     	public void ready(final String username, final String password) {
     		try {
     			dialog = ProgressDialog.show(Main.this, "", "Trying to login. Please wait...", true);
@@ -290,7 +290,7 @@ public class Main extends Activity {
     	MenuItem itemPreferences = menu.add(0, MENU_PREFERENCES, Menu.NONE, R.string.menu_preferences);
     	itemPreferences.setIcon(R.drawable.ic_menu_preferences);
     	itemPreferences.setOnMenuItemClickListener(new OnMenuItemClickListener() {
-			@Override
+			//@Override
 			public boolean onMenuItemClick(MenuItem item) {
 				Intent intent = new Intent(Main.this, Preferences.class);
 				startActivity(intent);

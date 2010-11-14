@@ -56,7 +56,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
 		String[] commentButtonTag = { item.getTitle(), item.getCommentsUrl() };
 		holder.comment.setTag(commentButtonTag);
 		holder.comment.setOnClickListener(new OnClickListener() {
-			@Override
+			//@Override
 			public void onClick(View v) {
 				String[] tag = (String[]) v.getTag();
 				Intent intent = new Intent(context, Comments.class);

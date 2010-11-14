@@ -38,7 +38,7 @@ public class LoginDialog extends Dialog {
     }
 	
 	private class loginListener implements android.view.View.OnClickListener {
-		 @Override
+		 //@Override
 	     public void onClick(View v) {
 			 readyListener.ready(String.valueOf(username.getText()), String.valueOf(password.getText()));
 			 dismiss();

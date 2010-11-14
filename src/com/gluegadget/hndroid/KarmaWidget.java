@@ -78,7 +78,7 @@ public class KarmaWidget extends AppWidgetProvider {
 			return null;
 		}
 
-		@Override
+		//@Override
 		public void run() {
 			AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
 			while (hasMoreUpdates()) {
